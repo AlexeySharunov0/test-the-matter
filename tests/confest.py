@@ -5,7 +5,6 @@ import uuid
 import time
 from dotenv import load_dotenv
 
-# Загрузка переменных окружения из .env файла
 load_dotenv()
 
 # Получение конфигурации из переменных окружения
