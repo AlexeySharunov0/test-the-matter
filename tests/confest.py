@@ -35,7 +35,7 @@ def auth_token():
     try:
         print(f"\nAttempting login for user: {LOGIN_ID} at {BASE_URL}")
         response = requests.post(login_url, json=payload, headers=headers, timeout=15)
-        response.raise_for_status()  # Вызовет исключение для кодов 4xx/5xx
+        response.raise_for_status() 
         token = response.headers.get("Token")
         if not token:
              pytest.fail(f"Не удалось получить токен. Статус: {response.status_code}, Ответ: {response.text[:500]}...", pytrace=False)
