@@ -1,5 +1,6 @@
 import requests
 import pytest
+import uuid
 from .conftest import BASE_URL, LOGIN_ID, PASSWORD, LOCKED_USER_LOGIN, LOCKED_USER_PASSWORD, INACTIVE_USER_LOGIN, INACTIVE_USER_PASSWORD
 
 def test_successful_authentication(auth_token):
