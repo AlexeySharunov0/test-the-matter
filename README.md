@@ -64,6 +64,12 @@ To run tests, ensure you have the required Python environment and dependencies i
 pytest tests/
 ```
 
+To generate an HTML test report, run:
+
+```bash
+pytest --html=mattermost_report.html --self-contained-html
+```
+
 ## Deployment Options
 
 This project includes deployment manifests and instructions for various environments:
